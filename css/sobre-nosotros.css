@@ -1,0 +1,41 @@
+body {
+    background-color: #f3f3f3;
+}
+
+#titulo-contenido {
+    color: black;
+    font-size: 40px;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    flex-direction: column;
+    position: relative;
+}
+
+.contenido {
+    margin-top: 100px;
+    align-items: center;
+    margin-right: 300px;
+    margin-left: 300px;
+}
+
+.wrapper{
+    margin-top: 100px;
+}
+
+article {
+    text-align: center;
+    margin-right: 300px;
+    margin-left: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 15px;
+    background: linear-gradient(180deg, gray, white);
+}
