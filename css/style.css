@@ -2,8 +2,17 @@ body {
     margin: 0;
     background-color: #f2f2f2;
     font-family: Arial, sans-serif;
-    background: url('tu-imagen-de-fondo.jpg') no-repeat center center fixed; 
+    /* background: url('tu-imagen-de-fondo.jpg') no-repeat center center fixed;  */
     background-size: cover;
+}
+
+.contenido img:hover {
+  transition: 5s;
+  transform: rotate(360deg);
+}
+
+@keyframes hoverAnimation {
+  
 }
 
 .navbar ul {
@@ -34,7 +43,12 @@ body {
 .navbar li a.active {
   color: white;
   background-color: #00fefb;
-  box-shadow: 0px 0px 2px 2px black;
+  /* box-shadow: 0px 0px 1px 1px black; */
+}
+
+.navbar li a.active:hover, .navbar li a:hover {
+  transition: 1s;
+  font-size: 20px;
 }
 
 .navbar .dropdown {
