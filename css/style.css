@@ -6,13 +6,33 @@ body {
     background-size: cover;
 }
 
-.contenido img:hover {
-  transition: 5s;
-  transform: rotate(360deg);
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-@keyframes hoverAnimation {
-  
+::-webkit-scrollbar:hover {
+  background-color: #00ffff;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #00ffff;
+  border-radius: 20px;
+}
+.contenido img {
+  animation-name: hoverAnimacion;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+@keyframes hoverAnimacion {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
 }
 
 .navbar ul {
