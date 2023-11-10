@@ -1,3 +1,7 @@
+* {
+    font-family: Rubik, 'Skranji';
+}
+
 .main {
     display: flex;
     justify-content: center;
@@ -6,10 +10,6 @@
     height: 100vh;
     flex-direction: column;
     position: relative;
-}
-
-.main {
-    background-repeat: black;
 }
 
 .contenido {
@@ -65,6 +65,6 @@
     width: 100px;
     font-size: 15px;
     transition: 1s;
-    background: linear-gradient(360deg, #00fefb, rgb(25,25,25)) ;
+    background: linear-gradient(360deg, #169EF2, rgb(25,25,25)) ;
     cursor: cell;
 }
