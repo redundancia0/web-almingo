@@ -1,7 +1,3 @@
-* {
-    font-family: Rubik, 'Skranji';
-}
-
 .main {
     display: flex;
     justify-content: center;
@@ -13,58 +9,59 @@
 }
 
 .contenido {
-    border: 1px solid black;
+    border: 1px solid #000;
     padding: 50px;
     background-color: #ebebeb;
     border-radius: 10px;
-    box-shadow: 0px 0px 15px 10px rgb(25,25,25);
+    box-shadow: 0 0 15px 10px rgb(25, 25, 25);
+    transition: background-color 0.5s ease;
 }
 
 .contenido:hover {
-    transition: 2s;
+    background-color: #d0d0d0;
+}
+
+.contenido input,
+.contenido textarea,
+.contenido select {
+    color: white;
+    background-color: rgb(25, 25, 25);
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 
 .contenido select {
-    background-color: rgb(25,25,25);
-    color: white;
-    width: 300px;
-    text-align: center;
-    border-radius: 20px;
+    width: 100%
 }
 
-.contenido label {
-    margin-bottom: 10px;
+
+.contenido textarea {
+    resize: vertical;
 }
 
-.contenido input {
-    width: 300px;
-    height: 25px;
-}
-.contenido input, textarea {
-    color: white;
-    background-color: rgb(25,25,25);
-    border-radius: 5px;
-    /* height: 20px; */
-    border: solid 1px;
-}
-
-.pie { 
+.pie {
     text-align: center;
 }
 
 #boton-contacto {
-    background-color: rgb(25,25,25);
+    background-color: rgb(25, 25, 25);
     color: white;
     border-radius: 10px;
     height: 30px;
     width: 80px;
-    border: 0;
+    border: none;
+    cursor: pointer;
+    transition: width 0.5s, font-size 0.5s, background 0.5s;
 }
 
 #boton-contacto:hover {
-    width: 100px;
-    font-size: 15px;
-    transition: 1s;
-    background: linear-gradient(360deg, #169EF2, rgb(25,25,25)) ;
-    cursor: cell;
+    transition: 0.5s;
+    /* zoom: 20%; */
+    color: white;
+    background-color: #169EF2;
+    height: 35px;
 }

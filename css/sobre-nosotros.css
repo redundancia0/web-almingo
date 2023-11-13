@@ -46,14 +46,31 @@ article p {
 }
 
 article h2 {
+    margin-top: 10px;
     text-align: center;
 
 }
 
+/* En sobre-nosotros.css */
 @media screen and (max-width: 600px) {
+    #titulo-contenido {
+        font-size: 1.8rem;
+    }
+
+    .contenido {
+        margin-top: 10px;
+    }
+
+    .article-wrapper {
+        max-width: 100%;
+    }
+
     article {
-        margin-right: 20px;
-        margin-left: 20px;
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    #wrapper {
+        margin-bottom: 50px;
     }
 }
-
