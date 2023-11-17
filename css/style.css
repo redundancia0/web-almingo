@@ -112,6 +112,7 @@ header {
   text-align: center;
   flex-direction: column;
   position: relative;
+  height: 100vh;
 }
 
 .description {
@@ -176,8 +177,7 @@ header {
   #wrapper {
       margin-bottom: 50px;
   }
-
   .pie {
-      padding: 5px;
+    padding: 5px;
   }
 }
